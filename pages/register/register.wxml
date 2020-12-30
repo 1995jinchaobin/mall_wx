@@ -1,0 +1,22 @@
+<!-- pages/register/register.wxml -->
+<view class="register">
+  <view class="registerContent">
+    <view class="telephone">
+      <input maxlength="11" placeholder="请输入手机号" type="number" bindinput="telephoneInput" />
+      <view class="codeSet" bindtap="codeSet">发送验证码</view>
+    </view>
+    <view class="code">
+      <input placeholder="请输入验证码" bindinput="codeInput" type="number" value="{{registerParams.authCode}}" />
+    </view>
+    <view class="userName">
+      <input placeholder="请输入账号" type="number" bindinput="userNameInput" />
+    </view>
+    <view class="password">
+      <input placeholder="请输入密码" type="number" bindinput="passwordInput" />
+    </view>
+    <view class="loginBtn">
+      <button bindtap="register">注册</button>
+      <button bindtap="toBeforLogin">返回</button>
+    </view>
+  </view>
+</view>

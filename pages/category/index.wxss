@@ -1,0 +1,33 @@
+/* pages/category/index.wxss */
+.categoryTop{
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  border-top: 2rpx solid #000;
+  border-bottom: 2rpx solid #000;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.index1 {
+  border-left:2rpx solid #000;
+  border-right:2rpx solid #000;
+}
+.categoryTop view {
+  flex: 1;
+}
+.activeColor{
+  color: red;
+}
+.contentList{
+  width: 750rpx;
+  height: 500rpx;
+}
+.nameC{
+  font-size: 30rpx;
+  font-weight: 800;
+}
+.imgC{
+  width: 300rpx;
+  float: left;
+}

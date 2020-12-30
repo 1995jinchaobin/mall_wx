@@ -1,0 +1,30 @@
+<!-- pages/category/index.wxml -->
+<view class="category">
+  <view class="search">搜索</view>
+  <view class="categoryTop">
+    <view wx:for="{{topIndex}}" class="{{activeIndex === index? 'activeColor': ''}} {{item.class}}" wx:key="id" bindtap="handleItemTap" data-index="{{index}}">
+      {{item.name}}
+    </view>
+  </view>
+  <view class="content">
+    <!-- <scroll-view scroll-y class="left_menu">
+      <view class="menu_item {{index===currentIndex?'active':''}}" wx:for="{{leftMenuList}}" wx:key="*this" bindtap="handleItemTap" data-index="{{index}}">
+        {{item}}
+      </view>
+    </scroll-view> -->
+    <view class="contentList" wx:for="{{showList}}" wx:key="id">
+      <view>
+        <view class="nameC">{{item.name}}</view>
+        <view class="contentC">
+          <image mode="widthFix" lazy-load="false" src="{{item.pic}}" class="imgC"></image>
+          <view>{{item.subTitle}}</view>
+          <text>市场价:{{item.originalPrice}}</text>
+          <text>价格:{{item.price}}</text>
+          <text>库存:{{item.sort}}</text>
+          <text>赠送成长值:{{item.giftGrowth}}</text>
+          <text>赠送积分:{{item.giftPoint}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

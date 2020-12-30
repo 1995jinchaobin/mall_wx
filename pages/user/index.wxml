@@ -1,0 +1,31 @@
+<!-- pages/user/index.wxml -->
+<!-- <text>pages/user/index.wxml</text> -->
+<view class="user">
+  <view>
+    <view wx:if="{{login}}">
+      <!-- <text>已登录</text> -->
+      <text bindtap="toLogin">退出登录</text>
+    </view>
+    <text wx:else bindtap="toLogin">未登录</text>
+  </view>
+  <view class="head">
+    <image src="../../img/tim1g.jpg" alt="#" />
+    <view class="headRight">
+      <text class="nicheng">昵称</text>
+      <text class="nicheng">成就墙</text>
+    </view>
+  </view>
+  <view class="main">
+    <view class="my fAroud">
+      <view class="myOrder" catchtap="myOrder">
+        <text>我的订单</text>
+      </view>
+      <view class="showAll" catchtap="lookAll">
+        <text class="showAll">查看全部</text>
+      </view>
+    </view>
+    <view class="orderFenlei fAroud">
+      <text wx:for="{{orderFenleiList}}" wx:key="id">{{item.label}}</text>
+    </view>
+  </view>
+</view>

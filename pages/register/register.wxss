@@ -1,0 +1,41 @@
+/* pages/register/register.wxss */
+.register{
+  width: 750rpx;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerContent{
+  width: 600rpx;
+  height: 700rpx;
+}
+.telephone{
+  position: relative;
+}
+input{
+  width: 530rpx;
+  height: 104rpx;
+  background: rgba(255,255,255,0.20);
+  border-radius: 12rpx;
+  display: flex;
+  line-height: 104rpx;
+  padding-left: 60rpx;
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+  font-size: 32rpx;
+  color:#aaa;
+  letter-spacing: 3.2rpx;
+}
+.codeSet{
+  position: absolute;
+  width: 180rpx;
+  top: 22rpx;
+  right: 0;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #aaa;
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+}

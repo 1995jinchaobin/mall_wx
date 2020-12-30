@@ -1,0 +1,15 @@
+<!-- pages/login/login.wxml -->
+<view class="login">
+  <text bindtap="toBeforLogin">返回</text>
+  <view class="loginContent">
+    <view class="userName">
+      <input placeholder="请输入账号" type="number" bindinput="userNameInput" value="{{loginParams.username}}" />
+    </view>
+    <view class="password">
+      <input placeholder="请输入密码" type="number" bindinput="passwordInput" value="{{loginParams.password}}" />
+    </view>
+    <view class="loginBtn">
+      <button bindtap="login">登录</button>
+    </view>
+  </view>
+</view>

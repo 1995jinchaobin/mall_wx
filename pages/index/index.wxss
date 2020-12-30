@@ -1,0 +1,7 @@
+/* pages/index/index.wxss */
+.brandListImg{
+  display: flex;
+}
+.image {
+  width: 150rpx;
+}

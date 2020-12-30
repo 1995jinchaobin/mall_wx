@@ -1,0 +1,17 @@
+<!-- pages/beforLogin/index.wxml -->
+<view class="beforLogin">
+  <view class="loginContent">
+    <button class="wxLoginBtn" type="primary" bindtap="wxLogin" wx:if="{{wxBtn===true}}">
+      微信登录
+    </button>
+    <view wx:else>
+      <button class="phoneLoginBtn" type="primary" bindtap="phoneLogin">手机登录</button>
+      <button class="biLoginBtn" type="primary" bindtap="biLogin">那个币登录</button>
+    </view>
+    <view class="loginText">
+      <text bindtap="changeLogin" wx:if="{{wxBtn===true}}">其他登录方式</text>
+      <text bindtap="changeLogin" wx:else>返回</text>
+    </view>
+    <view bindtap="toRegidster" class="zhuce">注册</view>
+  </view>
+</view>

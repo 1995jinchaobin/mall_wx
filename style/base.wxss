@@ -1,0 +1,19 @@
+/* 上下左右边框 */
+.bR{
+  border-right: 1px solid #000;
+}
+.bT{
+  border-top: 1px solid #000;
+}
+.bB{
+  border-bottom: 1px solid #000;
+}
+.bL {
+  border-left: 1px solid #000;
+}
+/* 平均填满弹性布局 */
+.fAroud{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

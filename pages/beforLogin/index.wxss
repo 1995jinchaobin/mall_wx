@@ -1,0 +1,25 @@
+/* pages/beforLogin/index.wxss */
+.beforLogin{
+  height: 100vh;
+  position: relative;
+}
+.loginText{
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+.loginContent{
+  position: absolute;
+  height: 500rpx;
+  bottom: 30rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.zhuce{
+  position: absolute;
+  bottom: 40rpx;
+  right: 40rpx;
+}
+.biLoginBtn{
+  margin-top: 40rpx;
+}
